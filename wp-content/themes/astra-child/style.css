@@ -69,9 +69,64 @@ Updated: 2024-11-29 18:37:40
     margin: auto;
 }
 
+.image_footer_container_rencontre {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 1440px !important;
+    height: auto !important;
+    margin: auto !important;
+    background-color: #EDE3DA !important;
+}
+
 .image_footer {
     width: 100%;
     height: 100%;
     /* Remplit le container avec l'image sans anamorphose */
     object-fit: cover;
+}
+
+.footer_mentions_legales {
+    text-align: center;
+    font-family: syne;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/*-------------------------------------- Mise en forme du formulaire de contact --------------------------------------*/
+.wpcf7-text {
+    /* width: 363px !important;*/
+    height: 71px !important;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border-radius: 7px !important;
+}
+
+.wpcf7 textarea {
+    height: 237px !important;
+    margin-top: 10px;
+    border-radius: 7px !important;
+}
+
+.wpcf7 form {
+    width: 383px !important;
+}
+
+.label-form-contact {
+    font-family: syne;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    display: block;
+    margin: 0 auto;
+    width: 198px !important;
+    height: 55px !important;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 15px;
 }

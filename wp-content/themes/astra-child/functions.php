@@ -40,3 +40,28 @@ function ajout_admin_menu_item($items, $args) // Fonction de rappel qui à 2 arg
 }
 
 add_filter('wp_nav_menu_items', 'ajout_admin_menu_item', 10, 2); //Accrochage de la fonction callback 'ajout_admin_menu_item' au filtre 'wp_nav_menu_items'
+
+
+// --------------------------------------------- Ajout gestion footer selon l'ID de page -----------------------------------------------------
+function   switch_footer_on_page_ID()
+{
+    $id_page = get_the_ID();
+    $id_cible = 21;
+    if ($id_page == $id_cible) {
+        echo "<div class='image_footer_container_rencontre'>";
+        echo "<img class='image_footer' src='http://localhost/planty/wp-content/uploads/2024/12/Mask-group-4.png' alt='Frise en canettes de Planty'>";
+        echo "</div>";
+        echo "<div class='footer_mentions_legales'>";
+        echo "<p>Mentions légales</p>";
+        echo "</div>";
+    } else {
+        echo "<div class='image_footer_container'>";
+        echo "<img class='image_footer' src='http://localhost/planty/wp-content/uploads/2024/12/Mask-group-4.png' alt='Frise en canettes de Planty'>";
+        echo "</div>";
+        echo "<div class='footer_mentions_legales'>";
+        echo "<p>Mentions légales</p>";
+        echo "</div>";
+    }
+}
+
+add_action('wp_footer', 'switch_footer_on_page_ID', 10, 0);
