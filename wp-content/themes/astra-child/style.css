@@ -8,44 +8,100 @@ Description: Astra is fast, fully customizable &amp; beautiful WordPress theme s
 Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
 Version: 4.8.7.1732901860
 Updated: 2024-11-29 18:37:40
-
 */
 
+
+/*-----------------------------------  Header settings -----------------------------------------------------------*/
+
+#global-header-container {
+    height: 80px !important;
+}
+
+#widget-menu {
+    width: 100% !important;
+    height: 80px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-content: center !important;
+    flex-direction: row !important;
+}
+
+.main-header-main-header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ast-container {
+    padding: 0px !important;
+    margin: auto !important;
+}
+
+.page-template-default {
+    max-width: 1440px !important;
+    margin: auto !important;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100% !important;
+}
+
+
 /*-------------------------- css du menu "Commander": ID menu-item-69 avec enrichissement menu (wp_nav_menu_items)  ---------------------------*/
-#menu-item-69 {
+.menu-item-69 {
+    font-family: syne;
+    font-size: 16px;
+    font-weight: 700;
     background-color: #DE9E99 !important;
-    width: 236px;
+    width: 236px !important;
+    height: 80px !important;
     /* Positionne le menu "Commander" à l'extremité droite du menu */
     order: 4 !important;
+    text-align: center !important;
+    align-content: center !important;
+    color: white !important;
 }
 
-#menu-item-69 .menu-link {
+.menu-item-69 .menu-link {
+    color: white !important;
+}
+
+#menu-item-69 a.menu-link {
     /* met le texte du menu "Commander" en blanc */
     color: #ffffff !important;
-
 }
 
-/*-------------------------- css du menu "Commander": ID menu-item-97 Avec solution switch entre 2 menus (wp_nav_menu_args) ---------------------------*/
-#menu-item-97 {
-    background-color: #DE9E99 !important;
-    width: 236px;
-}
-
-#menu-item-97 .menu-link {
-    color: #ffffff !important;
+.ast-primary-header-bar {
+    padding-right: 0px !important;
 }
 
 /*--------------------- Ajustement du menu "Nous renconter" --------------------*/
-#menu-item-70 .menu-link {
+.menu-item-70 .menu-link {
     margin-left: 0px !important;
-    margin-right: -40px !important;
-    /*background-color: #DE9E99 !important;*/
+    margin-right: 60px !important;
+    color: black !important;
+}
+
+.menu-item-70 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    color: black !important;
+}
+
+
+/*--------------------- Ajustement du menu "Admin" --------------------*/
+#menu-item-admin .menu-link {
+    color: black !important;
+    margin-right: 60px !important;
 }
 
 .menu-link {
     /* Centrege des liens de menu */
     justify-content: center !important;
 }
+
 
 /*------------------------ CSS Bouton Commander page Home -------------------------*/
 .elementor-button {
@@ -55,6 +111,8 @@ Updated: 2024-11-29 18:37:40
     justify-content: center !important;
     width: 198px !important;
     height: 55px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -94,26 +152,28 @@ Updated: 2024-11-29 18:37:40
     margin-top: 20px;
 }
 
-/*-------------------------------------- Mise en forme du formulaire de contact --------------------------------------*/
-.wpcf7-text {
-    /* width: 363px !important;*/
+
+/*-------------------------------------- Mise en forme du formulaire de contact ID = "wpcf7-f1843-p23-o1" --------------------------------------*/
+#wpcf7-f1565-p21-o1 .wpcf7-form-control.wpcf7-text {
     height: 71px !important;
     margin-top: 10px;
     margin-bottom: 4px;
     border-radius: 7px !important;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25) !important;
 }
 
-.wpcf7 textarea {
+#wpcf7-f1565-p21-o1 .wpcf7-form-control.wpcf7-textarea {
     height: 237px !important;
     margin-top: 10px;
     border-radius: 7px !important;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25) !important;
 }
 
-.wpcf7 form {
+#wpcf7-f1565-p21-o1 .wpcf7-form {
     width: 383px !important;
 }
 
-.label-form-contact {
+#wpcf7-f1565-p21-o1 .label-form-contact {
     font-family: syne;
     font-weight: 400;
     font-size: 20px;
@@ -129,4 +189,458 @@ input.wpcf7-form-control.wpcf7-submit {
     font-family: syne;
     font-weight: 400;
     font-size: 15px;
+}
+
+
+/*-------------------------------------- Mise en forme du formulaire de commande ID = "wpcf7-f1843-p23-o1"--------------------------------------*/
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-textarea {
+    height: 237px !important;
+    margin-top: 10px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form {
+    width: 100% !important;
+}
+
+.section-gouts {
+    width: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 185px;
+    margin-left: 350px;
+}
+
+#wpcf7-f1843-p23-o1 .gout-fraise {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-pamplemousse {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-framboise {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-citron {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form .quantity {
+    width: 39px;
+}
+
+.wpcf7 .wpcf7-form-control-wrap .quantity {
+    width: 39px !important;
+    height: 56px !important;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+}
+
+#wpcf7-f1843-p23-o1 .label-form-contact {
+    font-family: syne;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text.quantity {
+    padding: 0px !important;
+    border: #EDE3DA;
+    background-color: #ffffff;
+    margin-bottom: 9px;
+}
+
+#wpcf7-f1843-p23-o1 input.wpcf7-form-control.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    display: block;
+    width: 198px !important;
+    height: 55px !important;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6px;
+}
+
+.section-gouts {
+    width: 860px !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-bottom: 1px solid white;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.section-infos {
+    border-right: 1px solid white;
+    padding-right: 43px;
+    height: 94%;
+}
+
+.section-livraison {
+    padding-left: 42px;
+}
+
+.bloc-informations h2 {
+    color: white !important;
+    font-family: syne !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    margin-bottom: 27px;
+}
+
+.bloc-informations .wpcf7-form-control.wpcf7-text {
+    height: 71px !important;
+}
+
+.section-infos label {
+    color: white !important;
+    font-family: syne !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+.section-livraison label {
+    color: white !important;
+    font-family: syne !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+.bloc-informations {
+    width: 860px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    margin-top: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------------------- Formulaire Commande Mobile -----------------------------------------------*/
+.section-gouts-mob {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    margin: auto;
+}
+
+.gout-fraise-mob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.gout-pamplemousse-mob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.gout-framboise-mob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.gout-citron-mob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.background-mob-fraise {
+    display: flex;
+    width: 193px;
+    height: 129px;
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/12/jeremy-bezanger-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.background-mob-pamplemousse {
+    display: flex;
+    width: 193px;
+    height: 129px;
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/12/estudio-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.background-mob-framboise {
+    display: flex;
+    width: 193px;
+    height: 129px;
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/12/rodion-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.background-mob-citron {
+    display: flex;
+    width: 193px;
+    height: 129px;
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/12/estudio-2-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.titre-image-mob {
+    color: white;
+    text-align: center;
+}
+
+.input-quantity-mob {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-quantity-mob p {
+    margin: 0px;
+}
+
+.quantity-mob {
+    text-align: center;
+    padding: 0px !important;
+    margin: auto !important;
+    width: 39px !important;
+    height: 56px !important;
+    margin-left: 20px !important;
+}
+
+.bloc-informations-mob .wpcf7-form-control.wpcf7-text {
+    height: 71px !important;
+    margin-top: 10px !important;
+    margin-bottom: 4px !important;
+    border-radius: 7px !important;
+    padding: 10px !important;
+}
+
+.label-mob {
+    font-family: syne !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    color: white !important;
+}
+
+.bloc-informations-mob h2 {
+    color: white !important;
+    font-family: syne !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    margin-bottom: 27px;
+}
+
+.bloc-informations-mob {
+    padding-top: 20px !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+
+/* ---------------------------------------------- Mise en forme formulaire commun aux deux formulaires -----------------------------------------*/
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    display: block;
+    margin: 0 auto;
+    width: 198px !important;
+    height: 55px !important;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 15px;
+    margin: auto;
+}
+
+
+/*------------------------------------------------------- Paramétrage Responsive  -------------------------------------------------*/
+@media (max-width: 921px) {
+    .ast-header-break-point .header-widget-area[data-section="sidebar-widgets-header-widget-1"] {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .main-header-main-header-menu {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .menu-item-69 {
+        font-family: syne;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #DE9E99 !important;
+        width: 236px !important;
+        order: 4 !important;
+        text-align: center !important;
+        align-content: center !important;
+        color: white !important;
+    }
+
+    .menu-item-70 {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        color: black !important;
+    }
+
+    .menu-item {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+}
+
+/* ------------------------------------------------ Tablette 815px -------------------------------------------- */
+@media (max-width: 815px) {
+    .ast-header-break-point .header-widget-area[data-section="sidebar-widgets-header-widget-1"] {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .section-gouts-mob {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        row-gap: 40px;
+        margin: auto;
+        margin-bottom: auto;
+    }
+
+    .main-header-main-header-menu {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item-69 {
+        font-family: syne;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #DE9E99 !important;
+        width: 236px !important;
+        height: 40px !important;
+        order: 4 !important;
+        text-align: center !important;
+        align-content: center !important;
+        color: white !important;
+    }
+
+}
+
+
+/*----------------------------------------------------- Portable 550px ---------------------------------------------------*/
+@media (max-width: 551px) {
+
+    .ast-builder-grid-row {
+        display: flex !important;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+    }
+
+    .ast-primary-header-bar {
+        padding: 0px !important;
+        padding-left: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .main-header-main-header-menu {
+        display: flex;
+        flex-direction: column;
+        border: #EDE3DA solid 2px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .menu-item-70 .menu-link {
+        margin-right: auto !important;
+        color: black !important;
+    }
+
+    .ast-header-break-point .header-widget-area[data-section="sidebar-widgets-header-widget-1"] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-header-main-header-menu {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item-69 {
+        font-family: syne;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 40px;
+        background-color: #DE9E99 !important;
+        width: 236px !important;
+        height: 40px !important;
+        order: 4 !important;
+        text-align: center !important;
+        align-content: center !important;
+        color: white !important;
+    }
+
+    .separateur-menu-lignes {
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        /* Couleur du diviseur */
+        margin: 0;
+        /* Espacement autour du diviseur */
+    }
 }

@@ -46,11 +46,16 @@ add_filter('wp_nav_menu_items', 'ajout_admin_menu_item', 10, 2); //Accrochage de
 function   switch_footer_on_page_ID()
 {
     $id_page = get_the_ID();
-    $id_cible = 21;
-    if ($id_page == $id_cible) {
+    $id_cible_1 = 21;
+    $id_cible_2 = 23;
+    if ($id_page == $id_cible_1) {
         echo "<div class='image_footer_container_rencontre'>";
         echo "<img class='image_footer' src='http://localhost/planty/wp-content/uploads/2024/12/Mask-group-4.png' alt='Frise en canettes de Planty'>";
         echo "</div>";
+        echo "<div class='footer_mentions_legales'>";
+        echo "<p>Mentions légales</p>";
+        echo "</div>";
+    } elseif ($id_page == $id_cible_2) {
         echo "<div class='footer_mentions_legales'>";
         echo "<p>Mentions légales</p>";
         echo "</div>";
@@ -65,3 +70,31 @@ function   switch_footer_on_page_ID()
 }
 
 add_action('wp_footer', 'switch_footer_on_page_ID', 10, 0);
+
+/*----------------------------------------- Astra suppression header --------------------------------------*/
+/*
+add_action('wp', 'astra_remove_header');
+
+function astra_remove_header()
+{
+    remove_action('astra_primary_header', array(Astra_Builder_Header::get_instance(), 'primary_header'));
+    remove_action('astra_mobile_primary_header', array(Astra_Builder_Header::get_instance(), 'mobile_primary_header'));
+}
+    */
+
+// Enregistrer et charger les widgets
+
+include_once(__DIR__ . '/widgets/afficheMenuWidget.php');
+//include_once(__DIR__ . '/widgets/afficheMenuWidgetMobile.php');
+function affiche_menu_charge_widget()
+{
+    register_widget('Affiche_Menu_Widget');
+}
+add_action('widgets_init', 'affiche_menu_charge_widget');
+
+/*function affiche_menu_charge_widget_mobile()
+{
+    register_widget('Affiche_Menu_Widget_Mobile');
+}
+add_action('widgets_init', 'affiche_menu_charge_widget_mobile');
+*/

@@ -1,0 +1,234 @@
+/*
+Theme Name: Astra Child
+Theme URI: https://wpastra.com/
+Template: astra
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: Astra is fast, fully customizable &amp; beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL &amp; Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained &amp; Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 4.8.7.1732901860
+Updated: 2024-11-29 18:37:40
+
+*/
+
+/*-------------------------- css du menu "Commander": ID menu-item-69 avec enrichissement menu (wp_nav_menu_items)  ---------------------------*/
+#menu-item-69 {
+    background-color: #DE9E99 !important;
+    width: 236px;
+    /* Positionne le menu "Commander" à l'extremité droite du menu */
+    order: 4 !important;
+}
+
+#menu-item-69 .menu-link {
+    /* met le texte du menu "Commander" en blanc */
+    color: #ffffff !important;
+
+}
+
+/*-------------------------- css du menu "Commander": ID menu-item-97 Avec solution switch entre 2 menus (wp_nav_menu_args) ---------------------------*/
+#menu-item-97 {
+    background-color: #DE9E99 !important;
+    width: 236px;
+}
+
+#menu-item-97 .menu-link {
+    color: #ffffff !important;
+}
+
+/*--------------------- Ajustement du menu "Nous renconter" --------------------*/
+#menu-item-70 .menu-link {
+    margin-left: 0px !important;
+    margin-right: 25px !important;
+    color: black !important;
+    /*background-color: #DE9E99 !important;*/
+}
+
+#menu-item-admin .menu-link {
+    color: black !important;
+    margin-right: 45px !important;
+}
+
+.menu-link {
+    /* Centrege des liens de menu */
+    justify-content: center !important;
+}
+
+/*------------------------ CSS Bouton Commander page Home -------------------------*/
+.elementor-button {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 198px !important;
+    height: 55px !important;
+}
+
+
+
+/*---------------------------- Réglages du pied de pages ----------------------*/
+.image_footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: auto;
+    margin: auto;
+}
+
+.image_footer_container_rencontre {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 1440px !important;
+    height: auto !important;
+    margin: auto !important;
+    background-color: #EDE3DA !important;
+}
+
+.image_footer {
+    width: 100%;
+    height: 100%;
+    /* Remplit le container avec l'image sans anamorphose */
+    object-fit: cover;
+}
+
+.footer_mentions_legales {
+    text-align: center;
+    font-family: syne;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/*-------------------------------------- Mise en forme du formulaire de contact ID = "wpcf7-f1843-p23-o1" --------------------------------------*/
+
+#wpcf7-f1565-p21-o1 .wpcf7-form-control.wpcf7-text {
+    height: 71px !important;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1565-p21-o1 .wpcf7-form-control.wpcf7-textarea {
+    height: 237px !important;
+    margin-top: 10px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1565-p21-o1 .wpcf7-form {
+    width: 383px !important;
+}
+
+/*.wpcf7 form {
+    width: 383px !important;
+}*/
+
+#wpcf7-f1565-p21-o1 .label-form-contact {
+    font-family: syne;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    display: block;
+    margin: 0 auto;
+    width: 198px !important;
+    height: 55px !important;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*-------------------------------------- Mise en forme du formulaire de commande ID = "wpcf7-f1843-p23-o1"--------------------------------------*/
+
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text {
+    /*height: 71px !important;*/
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-textarea {
+    height: 237px !important;
+    margin-top: 10px;
+    border-radius: 7px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form {
+    width: 100% !important;
+}
+
+.section-gouts {
+    width: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 185px;
+    margin-left: 350px;
+}
+
+
+
+#wpcf7-f1843-p23-o1 .gout-fraise {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-pamplemousse {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-framboise {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#wpcf7-f1843-p23-o1 .gout-citron {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+#wpcf7-f1843-p23-o1 .wpcf7-form .quantity {
+    width: 39px;
+}
+
+.wpcf7 .wpcf7-form-control-wrap .quantity {
+    width: 39px !important;
+    height: 56px !important;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+
+}
+
+
+
+#wpcf7-f1843-p23-o1 .label-form-contact {
+    font-family: syne;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+
+#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text.quantity {
+    /*border-radius: 7px !important;*/
+    padding: 0px !important;
+    border: #EDE3DA;
+    background-color: #ffffff;
+}
+
+/* -------------------------------------------------- Mise en forme formulaire commun aux deux formulaires -------------------------------------------*/
+
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    display: block;
+    margin: 0 auto;
+    width: 198px !important;
+    height: 55px !important;
+    font-family: syne;
+    font-weight: 400;
+    font-size: 15px;
+}

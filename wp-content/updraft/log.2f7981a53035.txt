@@ -1,0 +1,128 @@
+0000.002 () Opened log file at time: Fri, 13 Dec 2024 09:05:59 +0000 on http://localhost/planty
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.11 WP: 6.7.1 PHP: 8.2.18 (apache2handler, Windows NT JO-IDEAPAD_PRO 10.0 build 22631 (Windows 11) AMD64) MySQL: 8.3.0 (max packet size=67108864) WPLANG: fr_FR Server: Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 7.4M | 8M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 586106.8 MB
+0000.023 () Restore setup, now closing connection and starting restore over AJAX.
+0000.001 () Opened log file at time: Fri, 13 Dec 2024 09:06:00 +0000 on http://localhost/planty
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.11 WP: 6.7.1 PHP: 8.2.18 (apache2handler, Windows NT JO-IDEAPAD_PRO 10.0 build 22631 (Windows 11) AMD64) MySQL: 8.3.0 (max packet size=67108864) WPLANG: fr_FR Server: Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.3M | 10M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 586106.8 MB
+0000.003 () Ensuring WP_Filesystem is setup for a restore
+0000.004 () WP_Filesystem is setup and ready for a restore
+0000.021 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_e_events"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.024 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\planty\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.034 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.034 () Entity: db
+0000.035 () restore_backup(backup_file=backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-db.gz, type=db, info=a:0:{}, last_one=)
+0000.035 () Unpacking backup... (backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-db.gz, 0.7 Mb)
+0000.035 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\planty\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.037 () Database successfully unpacked
+0000.037 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.037 () Using direct MySQL access; value of use_mysqli is: 1
+0000.038 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,
+0000.058 () Max packet size: 64 MB
+0000.058 () Entering maintenance mode
+0000.058 () Activation du mode maintenance&#8230;
+0000.070 () Backup of: http://localhost/planty
+0000.071 () Content URL: http://localhost/planty/wp-content
+0000.071 () Uploads URL: http://localhost/planty/wp-content/uploads
+0000.071 () Old table prefix: wp_
+0000.071 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.071 () Site information: multisite=0
+0000.071 () Site information: sql_mode=
+0000.072 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.072 () New table prefix: u0_
+0000.074 () Processing table (MyISAM): wp_options - will restore as: u0_options
+0000.107 () Atomic restore: dropping original table (wp_options)
+0000.110 () Atomic restore: renaming new table (u0_options) to final table name (wp_options)
+0000.113 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.122 () Processing table (MyISAM): wp_users - will restore as: u0_users
+0000.132 () Atomic restore: dropping original table (wp_users)
+0000.135 () Atomic restore: renaming new table (u0_users) to final table name (wp_users)
+0000.138 () Processing table (MyISAM): wp_usermeta - will restore as: u0_usermeta
+0000.144 () Atomic restore: dropping original table (wp_usermeta)
+0000.147 () Atomic restore: renaming new table (u0_usermeta) to final table name (wp_usermeta)
+0000.150 () Processing table (MyISAM): wp_commentmeta - will restore as: u0_commentmeta
+0000.154 () Atomic restore: dropping original table (wp_commentmeta)
+0000.156 () Atomic restore: renaming new table (u0_commentmeta) to final table name (wp_commentmeta)
+0000.160 () Processing table (MyISAM): wp_comments - will restore as: u0_comments
+0000.168 () Atomic restore: dropping original table (wp_comments)
+0000.171 () Atomic restore: renaming new table (u0_comments) to final table name (wp_comments)
+0000.174 () Processing table (MyISAM): wp_links - will restore as: u0_links
+0000.180 () Atomic restore: dropping original table (wp_links)
+0000.183 () Atomic restore: renaming new table (u0_links) to final table name (wp_links)
+0000.186 () Processing table (MyISAM): wp_postmeta - will restore as: u0_postmeta
+0000.786 () Database queries processed: 50 in 0.75 seconds
+0001.181 () Atomic restore: dropping original table (wp_postmeta)
+0001.186 () Atomic restore: renaming new table (u0_postmeta) to final table name (wp_postmeta)
+0001.189 () Processing table (MyISAM): wp_posts - will restore as: u0_posts
+0001.387 () Atomic restore: dropping original table (wp_posts)
+0001.392 () Atomic restore: renaming new table (u0_posts) to final table name (wp_posts)
+0001.396 () Processing table (MyISAM): wp_term_relationships - will restore as: u0_term_relationships
+0001.402 () Atomic restore: dropping original table (wp_term_relationships)
+0001.405 () Atomic restore: renaming new table (u0_term_relationships) to final table name (wp_term_relationships)
+0001.408 () Processing table (MyISAM): wp_term_taxonomy - will restore as: u0_term_taxonomy
+0001.413 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.416 () Atomic restore: renaming new table (u0_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.419 () Processing table (MyISAM): wp_termmeta - will restore as: u0_termmeta
+0001.425 () Atomic restore: dropping original table (wp_termmeta)
+0001.427 () Atomic restore: renaming new table (u0_termmeta) to final table name (wp_termmeta)
+0001.431 () Processing table (MyISAM): wp_terms - will restore as: u0_terms
+0001.436 () Atomic restore: dropping original table (wp_terms)
+0001.439 () Atomic restore: renaming new table (u0_terms) to final table name (wp_terms)
+0001.442 () Processing table (MyISAM): wp_e_events - will restore as: u0_e_events
+0001.447 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0001.561 () Unlocking database and leaving maintenance mode
+0001.561 () Désactivation du mode maintenance&#8230;
+0001.561 () Atomic restore: dropping original table (wp_e_events)
+0001.564 () Atomic restore: renaming new table (u0_e_events) to final table name (wp_e_events)
+0001.567 () Finished: lines processed: 91 in 1.53 seconds
+0001.567 () Cleaning up rubbish...
+0001.568 () Begin search and replace (updraftplus_restored_db)
+0001.568 () [Database-replace-site-url] Database: search and replace site URL
+0001.568 () This option was not selected.
+0001.575 () Entity: plugins
+0001.575 () restore_backup(backup_file=backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:39:"C:\wamp64\www\planty/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0001.576 () Unpacking backup... (backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-plugins.zip, 20 MB)
+0001.577 () Unzipping backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-plugins.zip to C:/wamp64/www/planty/wp-content/upgrade/4dbdacaf/ using UpdraftPlus_ZipArchive, starting index 0
+0002.156 () Unzip progress: 1002 out of 3613 files (5.9 MB, plugins/elementor/assets/css/widget-contact-buttons-vars.min.css)
+0002.806 () Unzip progress: 2003 out of 3613 files (46 MB, plugins/elementor/includes/managers/wordpress-widgets.php)
+0003.404 () Unzip progress: 3004 out of 3613 files (69.2 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Log/ArrayLogAdapter.php)
+0003.732 () Unzip progress: 3613 out of 3613 files (72.8 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0003.734 () Moving old data: filesystem method / updraft_dir is potentially possible
+0003.735 () Moving old data: can potentially use wp_filesystem method / -old
+0003.735 () Moving old data out of the way...
+0004.311 () Top-level entities being moved: child-theme-configurator, contact-form-7, elementor, header-footer-elementor, index.php, updraftplus
+0004.321 () Moving unpacked backup into place...
+0004.951 () Top-level entities being moved: child-theme-configurator, contact-form-7, elementor, index.php, updraftplus
+0004.965 () Cleaning up rubbish...
+0004.967 () Entity: themes
+0004.967 () restore_backup(backup_file=backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-themes.zip, type=themes, info=a:3:{s:4:"path";s:38:"C:\wamp64\www\planty/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0004.969 () Unpacking backup... (backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-themes.zip, 6.2 MB)
+0004.970 () Unzipping backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-themes.zip to C:/wamp64/www/planty/wp-content/upgrade/e0cecca6/ using UpdraftPlus_ZipArchive, starting index 0
+0005.537 () Unzip progress: 1002 out of 1102 files (17.2 MB, themes/astra/inc/lib/webfont/class-astra-webfont-loader.php)
+0005.603 () Unzip progress: 1102 out of 1102 files (20.8 MB, themes/index.php)
+0005.604 () Moving old data: filesystem method / updraft_dir is potentially possible
+0005.605 () Moving old data: can potentially use wp_filesystem method / -old
+0005.605 () Moving old data out of the way...
+0005.807 () Top-level entities being moved: astra, astra-child, index.php
+0005.810 () Moving unpacked backup into place...
+0006.017 () Top-level entities being moved: astra, astra-child, index.php
+0006.021 () Cleaning up rubbish...
+0006.023 () Entity: uploads
+0006.024 () restore_backup(backup_file=backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:39:"C:\wamp64\www\planty/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0006.025 () Unpacking backup... (backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-uploads.zip, 22.6 MB)
+0006.026 () Unzipping backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-uploads.zip to C:/wamp64/www/planty/wp-content/upgrade/287d93a4/ using UpdraftPlus_ZipArchive, starting index 0
+0006.152 () Unzip progress: 180 out of 180 files (22.6 MB, uploads/wpcf7_uploads/.htaccess)
+0006.153 () Moving old data: filesystem method / updraft_dir is potentially possible
+0006.153 () Moving old data: can potentially use wp_filesystem method / -old
+0006.153 () Moving old data out of the way...
+0006.180 () Moving unpacked backup into place...
+0006.210 () Cleaning up rubbish...
+0006.212 () Entity: others
+0006.212 () restore_backup(backup_file=backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-others.zip, type=others, info=a:2:{s:4:"path";s:31:"C:\wamp64\www\planty/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0006.213 () Unpacking backup... (backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-others.zip, 1.4 MB)
+0006.214 () Unzipping backup_2024-12-12-1354_localhost_planty_eb9b2d6b9370-others.zip to C:/wamp64/www/planty/wp-content/upgrade/666b5972/ using UpdraftPlus_ZipArchive, starting index 0
+0006.304 () Unzip progress: 132 out of 132 files (4.8 MB, languages/plugins/elementor-fr_FR.po)
+0006.309 () Cleaning up rubbish...
+0006.318 () Elementor's clear cache method exists and will be executed
+0006.354 () Restore successful!
+0006.355 () Restore successful
