@@ -73,6 +73,11 @@ Updated: 2024-11-29 18:37:40
     color: #ffffff !important;
 }
 
+.menu-item-69:hover {
+    /* Couleur de fond au  survol */
+    background-color: #BF2E44 !important;
+}
+
 .ast-primary-header-bar {
     padding-right: 0px !important;
 }
@@ -533,6 +538,11 @@ input.wpcf7-form-control.wpcf7-submit {
         color: black !important;
     }
 
+    .menu-item-69:hover {
+        /* Couleur de fond au  survol */
+        background-color: #BF2E44 !important;
+    }
+
     .menu-item {
         margin-top: auto;
         margin-bottom: auto;
@@ -575,6 +585,11 @@ input.wpcf7-form-control.wpcf7-submit {
         text-align: center !important;
         align-content: center !important;
         color: white !important;
+    }
+
+    .menu-item-69:hover {
+        /* Couleur de fond au  survol */
+        background-color: #BF2E44 !important;
     }
 
 }
@@ -649,6 +664,11 @@ input.wpcf7-form-control.wpcf7-submit {
         text-align: center !important;
         align-content: center !important;
         color: white !important;
+    }
+
+    .menu-item-69:hover {
+        /* Couleur de fond au  survol */
+        background-color: #BF2E44 !important;
     }
 
     .separateur-menu-lignes {
