@@ -69,12 +69,10 @@ Updated: 2024-11-29 18:37:40
 }
 
 #menu-item-69 a.menu-link {
-    /* met le texte du menu "Commander" en blanc */
     color: #ffffff !important;
 }
 
 .menu-item-69:hover {
-    /* Couleur de fond au  survol */
     background-color: #BF2E44 !important;
 }
 
@@ -103,7 +101,6 @@ Updated: 2024-11-29 18:37:40
 }
 
 .menu-link {
-    /* Centrege des liens de menu */
     justify-content: center !important;
 }
 
@@ -145,7 +142,6 @@ Updated: 2024-11-29 18:37:40
 .image_footer {
     width: 100%;
     height: 100%;
-    /* Remplit le container avec l'image sans anamorphose */
     object-fit: cover;
 }
 
@@ -197,148 +193,7 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 
-/*-------------------------------------- Mise en forme du formulaire de commande ID = "wpcf7-f1843-p23-o1"--------------------------------------*/
-#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text {
-    margin-top: 10px;
-    margin-bottom: 4px;
-    border-radius: 7px !important;
-}
-
-#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-textarea {
-    height: 237px !important;
-    margin-top: 10px;
-    border-radius: 7px !important;
-}
-
-#wpcf7-f1843-p23-o1 .wpcf7-form {
-    width: 100% !important;
-}
-
-.section-gouts {
-    width: 60px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 185px;
-    margin-left: 350px;
-}
-
-#wpcf7-f1843-p23-o1 .gout-fraise {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-#wpcf7-f1843-p23-o1 .gout-pamplemousse {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-#wpcf7-f1843-p23-o1 .gout-framboise {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-#wpcf7-f1843-p23-o1 .gout-citron {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-#wpcf7-f1843-p23-o1 .wpcf7-form .quantity {
-    width: 39px;
-}
-
-.wpcf7 .wpcf7-form-control-wrap .quantity {
-    width: 39px !important;
-    height: 56px !important;
-    display: inline-block;
-    text-align: center;
-    padding: 0px;
-}
-
-#wpcf7-f1843-p23-o1 .label-form-contact {
-    font-family: syne;
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 10px !important;
-}
-
-#wpcf7-f1843-p23-o1 .wpcf7-form-control.wpcf7-text.quantity {
-    padding: 0px !important;
-    border: #EDE3DA;
-    background-color: #ffffff;
-    margin-bottom: 9px;
-}
-
-#wpcf7-f1843-p23-o1 input.wpcf7-form-control.wpcf7-submit {
-    background-color: #E0B9B4 !important;
-    display: block;
-    width: 198px !important;
-    height: 55px !important;
-    font-family: syne;
-    font-weight: 400;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -6px;
-}
-
-.section-gouts {
-    width: 860px !important;
-    display: flex !important;
-    justify-content: center !important;
-    border-bottom: 1px solid white;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.section-infos {
-    border-right: 1px solid white;
-    padding-right: 43px;
-    height: 94%;
-}
-
-.section-livraison {
-    padding-left: 42px;
-}
-
-.bloc-informations h2 {
-    color: white !important;
-    font-family: syne !important;
-    font-size: 30px !important;
-    font-weight: 700 !important;
-    margin-bottom: 27px;
-}
-
-.bloc-informations .wpcf7-form-control.wpcf7-text {
-    height: 71px !important;
-}
-
-.section-infos label {
-    color: white !important;
-    font-family: syne !important;
-    font-size: 20px !important;
-    font-weight: 400 !important;
-}
-
-.section-livraison label {
-    color: white !important;
-    font-family: syne !important;
-    font-size: 20px !important;
-    font-weight: 400 !important;
-}
-
-.bloc-informations {
-    width: 860px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-self: center;
-    margin-top: 52px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*--------------------------------------------------- Formulaire Commande Mobile -----------------------------------------------*/
+/*--------------------------------------------------- Formulaire Commande  -----------------------------------------------*/
 
 .section-gouts-mob {
     width: 61%;
@@ -364,60 +219,28 @@ input.wpcf7-form-control.wpcf7-submit {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-items: flex-start;*/
     justify-content: center;
-    /*align-content: center;*/
-    /*flex-wrap: nowrap;*/
-    /*width: fit-content;*/
-    /*grid-column-start: 2 !important;*/
-    /* Commence à la colonne 2 */
-    /*grid-column-end: span 1 !important;*/
-    /* Occupe une colonne */
 }
 
 .gout-pamplemousse-mob {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-items: flex-start;*/
     justify-content: center;
-    /*align-content: center;*/
-    /*flex-wrap: nowrap;*/
-    /*width: fit-content;*/
-    /*grid-column-start: 3 !important;*/
-    /* Commence à la colonne 2 */
-    /*grid-column-end: span 1 !important;*/
-    /* Occupe une colonne */
 }
 
 .gout-framboise-mob {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-items: flex-start;*/
     justify-content: center;
-    /*align-content: center;*/
-    /*flex-wrap: nowrap;*/
-    /*width: fit-content;*/
-    /*grid-column-start: 4 !important;*/
-    /* Commence à la colonne 2 */
-    /*grid-column-end: span 1 !important;*/
-    /* Occupe une colonne */
 }
 
 .gout-citron-mob {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-items: flex-start;*/
     justify-content: center;
-    /*align-content: center;*/
-    /*flex-wrap: nowrap;*/
-    /*width: fit-content;*/
-    /*grid-column-start: 5 !important;*/
-    /* Commence à la colonne 2 */
-    /*grid-column-end: span 1 !important;*/
-    /* Occupe une colonne */
 }
 
 .background-mob-fraise {
@@ -482,8 +305,6 @@ input.wpcf7-form-control.wpcf7-submit {
     margin: 0px;
 }
 
-
-
 .quantity-mob {
     text-align: center;
     padding: 0px !important;
@@ -536,15 +357,12 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .filet-vertical {
     grid-column: 2 !important;
-    /* Deuxième colonne (filet) */
     border-left: 1px solid white !important;
     height: 90% !important;
-    /* Ajuste la hauteur selon tes besoins */
 }
 
 .section-livraison-mob {
     grid-column: 3 !important;
-    /* Troisième colonne */
     padding-left: 42px !important;
 }
 
@@ -573,14 +391,6 @@ input.wpcf7-form-control.wpcf7-submit {
     font-size: 15px;
     margin: auto;
 }
-
-
-/****************************************************** Correction formulaire de commande unique ***********************************************/
-
-
-
-
-/***********************************************************************************************************************************************/
 
 
 /*------------------------------------------------------- Paramétrage Responsive  -------------------------------------------------*/
@@ -619,7 +429,6 @@ input.wpcf7-form-control.wpcf7-submit {
     }
 
     .menu-item-69:hover {
-        /* Couleur de fond au  survol */
         background-color: #BF2E44 !important;
     }
 
@@ -643,26 +452,20 @@ input.wpcf7-form-control.wpcf7-submit {
 
     .bloc-informations-mob {
         grid-template-columns: 1fr !important;
-        /* Passer à une seule colonne */
         grid-template-rows: auto auto auto !important;
-        /* Configurer les lignes pour chaque section */
         gap: 20px !important;
-        /* Ajuster l'espacement entre les sections */
     }
 
     .section-infos-mob {
         grid-column: 1 !important;
-        /* Première section */
     }
 
     .filet-vertical {
         display: none;
-        /* Masquer le filet vertical */
     }
 
     .section-livraison-mob {
         grid-column: 1 !important;
-        /* Deuxième section */
     }
 
 
@@ -727,7 +530,6 @@ input.wpcf7-form-control.wpcf7-submit {
     }
 
     .menu-item-69:hover {
-        /* Couleur de fond au  survol */
         background-color: #BF2E44 !important;
     }
 
@@ -840,7 +642,6 @@ input.wpcf7-form-control.wpcf7-submit {
     }
 
     .menu-item-69:hover {
-        /* Couleur de fond au  survol */
         background-color: #BF2E44 !important;
     }
 
@@ -848,9 +649,7 @@ input.wpcf7-form-control.wpcf7-submit {
         width: 100%;
         height: 1px;
         background-color: #000;
-        /* Couleur du diviseur */
         margin: 0;
-        /* Espacement autour du diviseur */
     }
 
     .elementor-18 .elementor-element.elementor-element-f9259f2 .elementor-heading-title {
@@ -860,26 +659,20 @@ input.wpcf7-form-control.wpcf7-submit {
 
     .bloc-informations-mob {
         grid-template-columns: 1fr !important;
-        /* Passer à une seule colonne */
         grid-template-rows: auto auto auto !important;
-        /* Configurer les lignes pour chaque section */
         gap: 20px !important;
-        /* Ajuster l'espacement entre les sections */
     }
 
     .section-infos-mob {
         grid-column: 1 !important;
-        /* Première section */
     }
 
     .filet-vertical {
         display: none;
-        /* Masquer le filet vertical */
     }
 
     .section-livraison-mob {
         grid-column: 1 !important;
-        /* Deuxième section */
     }
 
 }
