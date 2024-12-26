@@ -25,9 +25,9 @@ add_action('wp_enqueue_scripts', 'child_theme_configurator_css', 10);
 
 // END ENQUEUE PARENT ACTION
 
-//------------------------------------------------------------- Gestion des menus -----------------------------------------------------
+//------------------------------------------------------------- Gestion du lien "Admin" menus -----------------------------------------------------
 
-//----- Avec le hook type de filtre 'wp_nav_menu_items' ------
+//-------------------------------------------------- Utilisation hook type de filtre 'wp_nav_menu_items' -------------------------------------------
 function ajout_admin_menu_item($items, $args) // Fonction de rappel qui à 2 arguments : 'les éléments de menu' et 'les arguments du menu'.
 {
     if (is_user_logged_in() && $args->theme_location == 'primary') { // Verifie si 'theme_location' est 'primary'(definit dans le resgister) et si user est connecté.
@@ -82,6 +82,7 @@ function astra_remove_header()
 }
     */
 
+//-------------------------------------------- Widget afficheMenuWidget  ---------------------------------------------
 // Enregistrer et charger les widgets
 
 include_once(__DIR__ . '/widgets/afficheMenuWidget.php');
